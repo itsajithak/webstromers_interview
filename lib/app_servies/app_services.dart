@@ -11,7 +11,6 @@ class AppServicesImpl extends AppServices{
   Future<ProductListModel> getProductList() async{
     final dio = Dio();
     var response = await dio.get('https://dummyjson.com/products');
-    print('the response is: ${response.data}');
     final result = productListModelFromJson(jsonEncode(response.data));
     return result;
   }

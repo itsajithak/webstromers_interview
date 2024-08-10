@@ -27,7 +27,7 @@ class ProductListControllerImpl extends ProductListController {
   final _appServices = AppServicesImpl();
   double _totalAmount = 0;
   bool _isChipIsTrue = false;
-  int selectedChipIndex = -1;
+  int selectedChipIndex = 0;
 
   @override
   bool get isChipIsTrue => _isChipIsTrue;
